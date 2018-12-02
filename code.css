@@ -6,6 +6,11 @@ nav {
     color: white;
 }
 
+form {
+    width: 75%;
+    margin: auto;
+}
+
 #item_Menu {
     margin: auto;
     font-size: 120%;
@@ -35,7 +40,7 @@ a:hover {
 * {box-sizing: border-box}
 
 /* Full-width input fields */
-  input[type=text], input[type=password], input[type=date], input[type=email], #pays, #civilite, #adresse {
+input[type=text], input[type=password], input[type=date], input[type=email], #pays, #civilite {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -44,7 +49,7 @@ a:hover {
   background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, input[type=email]:focus, #pays:focus, #civilite:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -70,14 +75,18 @@ button:hover {
   opacity:1;
 }
 
+label {
+    font-weight: bold;
+}
+
 /* Extra styles for the cancel button */
-.cancelbtn {
+.bouton_Annuler {
   padding: 14px 20px;
   background-color: #f44336;
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn, .signupbtn {
+.bouton_Annuler, .bouton_Valider {
   float: left;
   width: 50%;
 }
@@ -88,7 +97,7 @@ button:hover {
 }
 
 /* Clear floats */
-.clearfix::after {
+.bouton_Form::after {
   content: "";
   clear: both;
   display: table;
@@ -96,11 +105,8 @@ button:hover {
 
 /* Change styles for cancel button and signup button on extra small screens */
 @media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
+  .bouton_Annuler, .bouton_Valider {
     width: 100%;
   }
 }
 
-label {
-    font-weight: bold;
-}
