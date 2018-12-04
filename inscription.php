@@ -1,7 +1,7 @@
 <?php
 //Démarrage de la session
     session_start();
-    $_SESSION['connexion']='';
+    $_SESSION['inscription']='';
     include('menu.php');
 ?>
 
