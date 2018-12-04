@@ -1,3 +1,4 @@
+/* Mise en forme de la barre de menu */
 nav {
     width: 100%;
     height:10% ;
@@ -6,38 +7,75 @@ nav {
     color: white;
 }
 
-form {
-    width: 75%;
-    margin: auto;
+#logo_BankUP {
+  height: 70px;
+  width: 140px;
 }
 
 #item_Menu {
-    margin: auto;
-    font-size: 120%;
-    color: white;
-    border: 10px black;
-    height: 10%;
-    width: 15%;
+  margin: auto;
+  font-size: 120%;
+  color: white;
+  border: 10px black;
+  height: 10%;
+  width: 15%;
+  font-weight: bold;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #e20a79;
+  color: #e20a79;
 }
 
-#logo_BankUP {
-    height: 70px;
-    width: 140px;
+/* Bouton haut de page */
+
+#bouton_Haut {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #f44336; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 50px;
+}
+
+#fleche_Haut {
+  width: 1%;
+  height: 1%;
+}
+
+#bouton_Haut:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Mise en forme des formulaires */
+form {
+    width: 75%;
+    margin: auto;
+    background-color: white;
 }
 
 * {
     font: calibri;
 }
-* {box-sizing: border-box}
+* {
+    box-sizing: border-box
+}
+
+body {
+  background: url('monde.jpg') no-repeat center fixed;
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password], input[type=date], input[type=email], #pays, #civilite {
@@ -47,6 +85,7 @@ input[type=text], input[type=password], input[type=date], input[type=email], #pa
   display: inline-block;
   border: none;
   background: #f1f1f1;
+  text-align: left;
 }
 
 input[type=text]:focus, input[type=password]:focus, input[type=date]:focus, input[type=email]:focus, #pays:focus, #civilite:focus {
@@ -77,6 +116,7 @@ button:hover {
 
 label {
     font-weight: bold;
+
 }
 
 /* Extra styles for the cancel button */
